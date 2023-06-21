@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Groupie-Tracker</title>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>Groupie-Tracker</h1>
+        <div class="container">
+            {{range .}}
+            <div class="wrapper">
+            <div class="card">
+                <a href="/artists/{{ .ID }}">
+                    <img class="img" src="{{ .Image }}" alt="{{ .Name }}">
+                </a>
+            </div>
+        </div>
+        {{end}}
+    </div>
+        <p>By Made:</p>
+        <a href="https://01.alem.school/git/Mr.RobotDumbazz" class="button" target="_blank">
+            Mr.RobotDumbazz 
+        </a>
+        <a href="https://01.alem.school/git/amayev" class="button" target="_blank">
+            Amayev 
+        </a>
+    </div>
+</body>
+
+</html>

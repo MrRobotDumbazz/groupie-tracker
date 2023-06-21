@@ -1,0 +1,25 @@
+body {
+ background: rgb(160, 160, 160);
+}
+p, a {
+font-family: "MBPictureHouseTwo";
+font-size: 32px;
+}
+h1 {
+    font-family: "MBPictureHouseTwo";
+    font-size: 64px;
+}
+
+@font-face {
+    font-family: "MBPictureHouseTwo";
+    src: url("./fonts/MBPictureHouseTwo.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  .wrapper {
+      text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+ }
