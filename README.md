@@ -1,10 +1,10 @@
 # groupie-tracker
 # build:
-    docker build --rm -t ascii-art-web .
+    docker build --rm -t groupie-tracker .
     docker images
 
 # run:
-	docker container run -p 8080:8080 --detach --name ascii-art-web ascii-art-web
+	docker container run -p 8080:8080 --detach --name groupie-tracker groupie-tracker
     docker ps -a
 
 # check file system:
